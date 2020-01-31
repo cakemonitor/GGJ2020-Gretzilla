@@ -7,10 +7,12 @@ using UnityEngine;
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class FogEffect : MonoBehaviour
 {
+    public Pollution pollutionLevel;
     public Material _mat;
     public Color _fogColor;
     public float _depthStart = 0;
     public float _depthDistance = 0;
+
     // Start is called before the first frame update
     void Start()
     {
