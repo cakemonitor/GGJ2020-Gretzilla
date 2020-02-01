@@ -3,19 +3,19 @@ guid: 75e477ba393fd1e478502b8aeb0a6aec
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: SM_Earth_01_Land
-    100004: SM_Earth_01_Ocean
-    400000: //RootNode
-    400002: SM_Earth_01_Land
-    400004: SM_Earth_01_Ocean
+    100000: Earth_01_Land
+    100002: Earth_01_Ocean
+    100004: //RootNode
+    400000: Earth_01_Land
+    400002: Earth_01_Ocean
+    400004: //RootNode
     2100000: 'Material #40'
-    2300000: SM_Earth_01_Land
-    2300002: SM_Earth_01_Ocean
-    3300000: SM_Earth_01_Land
-    3300002: SM_Earth_01_Ocean
-    4300000: SM_Earth_01_Land
-    4300002: SM_Earth_01_Ocean
+    2300000: Earth_01_Land
+    2300002: Earth_01_Ocean
+    3300000: Earth_01_Land
+    3300002: Earth_01_Ocean
+    4300000: Earth_01_Land
+    4300002: Earth_01_Ocean
   externalObjects: {}
   materials:
     importMaterials: 1
