@@ -32,7 +32,13 @@ public class ObjectSpawner : MonoBehaviour
         spawnHelper.transform.rotation = Random.rotation;
         spawnHelper.transform.Translate(0, planetRadius, 0);
         
-        Instantiate(objectPrefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
+        GameObject CurrentSpawn = Instantiate(objectPrefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
+
+        if (!Pollution.PollutionBuildings.Contains(CurrentSpawn))
+        {
+            Pollution.PollutionBuildings.Add(CurrentSpawn);
+        }
+        CurrentSpawn = null;
     }
 
     void TimedSpawn()
