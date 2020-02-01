@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Factory : MonoBehaviour, ISmashable
+public class GreenBuilding : MonoBehaviour, ISmashable
 {
     public void Smash()
     {
-        Pollution.PollutionBuildings.Remove(gameObject);
+        Pollution.CleanBuildings.Remove(gameObject);
         Destroy(gameObject);
     }
 }
