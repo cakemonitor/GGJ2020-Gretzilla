@@ -6,7 +6,7 @@ public class ObjectSpawner : MonoBehaviour
 {
     public GameObject planet;
     public float planetRadius = 21.0f;
-    public GameObject objectPrefab;
+    public GameObject[] objectPrefabs;
     public int initialAmount = 5;
     public float minSpawnTime = 5.0f;
     public float maxSpawnTime = 15.0f;
@@ -16,7 +16,7 @@ public class ObjectSpawner : MonoBehaviour
     void Start()
     {
         spawnHelper = new GameObject();
-        spawnHelper.name = objectPrefab.name + " spawn helper";
+        spawnHelper.name = "Spawn helper";
 
         for (int i = 0; i < initialAmount - 1; i++)
         {
@@ -49,8 +49,9 @@ public class ObjectSpawner : MonoBehaviour
         if (attemptCount >= 90)
             Debug.Log("tried " + attemptCount + " times.");
 
-        spawnHelper.transform.Translate(0, planetRadius, 0);  
-        GameObject CurrentSpawn = Instantiate(objectPrefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
+        spawnHelper.transform.Translate(0, planetRadius, 0);
+        GameObject prefab = objectPrefabs[Random.Range(0, objectPrefabs.Length)];
+        GameObject CurrentSpawn = Instantiate(prefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
 
         if (!Pollution.PollutionBuildings.Contains(CurrentSpawn))
         {
