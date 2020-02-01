@@ -748,8 +748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planet: {fileID: 1216547893}
   planetRadius: 20.5
-  objectPrefab: {fileID: 9115315338869967206, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-    type: 3}
+  objectPrefabs: []
   initialAmount: 10
   minSpawnTime: 5
   maxSpawnTime: 15
