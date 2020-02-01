@@ -28,10 +28,28 @@ public class ObjectSpawner : MonoBehaviour
 
     void Spawn()
     {
-        spawnHelper.transform.position = planet.transform.position;
-        spawnHelper.transform.rotation = Random.rotation;
-        spawnHelper.transform.Translate(0, planetRadius, 0);
-        
+        bool spawnSiteFound = false;
+        int attemptCount = 0;
+        while (!spawnSiteFound && attemptCount < 100)
+        {
+            spawnHelper.transform.position = planet.transform.position;
+            spawnHelper.transform.rotation = Random.rotation;
+
+            Ray ray = new Ray();
+            ray.origin = spawnHelper.transform.position + spawnHelper.transform.up * planetRadius * 1.5f;
+            ray.direction = planet.transform.position - ray.origin;
+            LayerMask mask = LayerMask.GetMask("Landmass");
+            if (Physics.Raycast(ray, planetRadius, mask))
+            {
+                spawnSiteFound = true;
+            }
+            attemptCount++;
+        }
+
+        if (attemptCount >= 90)
+            Debug.Log("tried " + attemptCount + " times.");
+
+        spawnHelper.transform.Translate(0, planetRadius, 0);  
         GameObject CurrentSpawn = Instantiate(objectPrefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
 
         if (!Pollution.PollutionBuildings.Contains(CurrentSpawn))
