@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Pollution : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Pollution : MonoBehaviour
     public float PollutionLevel = 500;
     public float PollutionMultiplier = 1f;
 
-
+    public Image LoseScreen;
 
     // Update is called once per frame
     void Update()
@@ -19,7 +20,13 @@ public class Pollution : MonoBehaviour
         }
         else
         {
-
+            if (LoseScreen != null)
+            {
+                if (LoseScreen.enabled == false)
+                {
+                    LoseScreen.enabled = true;
+                }
+            }
         }
     }
 }
