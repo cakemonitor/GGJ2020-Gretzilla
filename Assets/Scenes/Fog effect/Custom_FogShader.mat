@@ -27,4 +27,4 @@ Material:
     - _DepthDistance: 500
     - _DepthStart: -100
     m_Colors:
-    - _FogColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 0}
+    - _FogColor: {r: 0.028301895, g: 0.01615344, b: 0.026642734, a: 0}

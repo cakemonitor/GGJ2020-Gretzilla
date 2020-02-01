@@ -6,16 +6,27 @@ ModelImporter:
     100000: //RootNode
     100002: SM_Earth_01_Land
     100004: SM_Earth_01_Ocean
+    100006: Earth_01_Land
+    100008: Earth_01_Ocean
     400000: //RootNode
     400002: SM_Earth_01_Land
     400004: SM_Earth_01_Ocean
+    400006: Earth_01_Land
+    400008: Earth_01_Ocean
     2100000: 'Material #40'
+    2100002: Earth
     2300000: SM_Earth_01_Land
     2300002: SM_Earth_01_Ocean
+    2300004: Earth_01_Land
+    2300006: Earth_01_Ocean
     3300000: SM_Earth_01_Land
     3300002: SM_Earth_01_Ocean
+    3300004: Earth_01_Land
+    3300006: Earth_01_Ocean
     4300000: SM_Earth_01_Land
     4300002: SM_Earth_01_Ocean
+    4300004: Earth_01_Land
+    4300006: Earth_01_Ocean
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -58,7 +69,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
+    optimizeMeshForGPU: 0
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
