@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     public GameObject planet;
     public float moveSpeed = 8.0f;
     public float turnSpeed = 180.0f;
-    public float attackDuration = 0.25f;
+    public float smashCooldown = 1.0f;
+
+    public Image cooldownImage;
 
     Rigidbody rBody;
     Vector2 motion = Vector2.zero;
@@ -16,9 +19,14 @@ public class PlayerController : MonoBehaviour
     float angularMovementSpeed;
     GameObject damageArea;
     float planetRadius;
+    float currentSmashCooldown;
+    float attackDuration = 0.25f;
+    Animator animator;
+    bool isStomping = false;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         rBody = GetComponent<Rigidbody>();
         centerPivot = new GameObject().transform;
         centerPivot.name = "Player Center Pivot";
@@ -47,11 +55,28 @@ public class PlayerController : MonoBehaviour
 
         centerPivot.Rotate(motion.y, 0, motion.x);
 
-        if (Input.GetButtonDown("Attack") && !damageArea.activeSelf)
+        if (currentSmashCooldown > 0)
         {
-            damageArea.SetActive(true);
-            Invoke("DeactiveDamageArea", attackDuration);
+            currentSmashCooldown -= Time.deltaTime;
+            if (currentSmashCooldown <= 0.0f)
+            {
+                currentSmashCooldown = 0.0f;
+                isStomping = false;
+            }
+            cooldownImage.fillAmount = 1.0f - (currentSmashCooldown / smashCooldown);
         }
+        else if (Input.GetButtonDown("Attack") && !isStomping)
+        {
+            isStomping = true;
+            animator.Play("Smash");
+        }
+    }
+
+    void Smash()
+    {
+        currentSmashCooldown = smashCooldown;
+        damageArea.SetActive(true);
+        Invoke("DeactiveDamageArea", attackDuration);
     }
 
     void FixedUpdate()
