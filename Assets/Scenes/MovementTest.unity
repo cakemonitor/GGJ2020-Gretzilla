@@ -124,8 +124,9 @@ GameObject:
   - component: {fileID: 146695120}
   - component: {fileID: 146695119}
   - component: {fileID: 146695118}
-  m_Layer: 0
-  m_Name: Sphere
+  - component: {fileID: 146695121}
+  m_Layer: 9
+  m_Name: Damage Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,7 +140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146695116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.5, z: 1}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 2069142004}
@@ -203,6 +204,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146695116}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &146695121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146695116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6defae95a60ed63b8b97e4283a2431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216547894}
+  - component: {fileID: 1216547895}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -477,6 +491,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216547895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216547893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 734611da6e5660b03ba7534943860eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planet: {fileID: 1216547893}
+  planetRadius: 20
+  objectPrefab: {fileID: 9115315338869967206, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
+    type: 3}
+  initialAmount: 5
+  minSpawnTime: 5
+  maxSpawnTime: 15
 --- !u!1 &1322169660
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +614,7 @@ GameObject:
   - component: {fileID: 2069142002}
   - component: {fileID: 2069142001}
   - component: {fileID: 2069142000}
+  - component: {fileID: 2069142005}
   m_Layer: 0
   m_Name: Gretzilla
   m_TagString: Untagged
@@ -603,6 +637,7 @@ MonoBehaviour:
   planet: {fileID: 1216547893}
   moveSpeed: 12
   turnSpeed: 90
+  attackDuration: 0.25
 --- !u!136 &2069142001
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -678,72 +713,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &9115315338878900971
-PrefabInstance:
+--- !u!54 &2069142005
+Rigidbody:
   m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069141999}
   serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 9115315338869967206, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_Name
-      value: Factory
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.766
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 19.634
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5.132
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.11813592
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.25688794
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.05137536
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.95781684
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967226, guid: b8c2fc75c0cda46249eb61df1eadf0b6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8c2fc75c0cda46249eb61df1eadf0b6, type: 3}
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
