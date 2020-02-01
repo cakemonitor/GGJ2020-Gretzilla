@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 8.0f;
     public float turnSpeed = 180.0f;
     public float smashCooldown = 1.0f;
+    public GameObject smashVFXPrefab;
 
     public Image cooldownImage;
 
@@ -77,6 +78,9 @@ public class PlayerController : MonoBehaviour
         currentSmashCooldown = smashCooldown;
         damageArea.SetActive(true);
         Invoke("DeactiveDamageArea", attackDuration);
+        CameraController.AddTrauma(1.0f);
+        GameObject smashVFX = Instantiate(smashVFXPrefab, transform.position, transform.rotation);
+        Destroy(smashVFX, 2f);
     }
 
     void FixedUpdate()

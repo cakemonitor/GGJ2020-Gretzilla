@@ -93,17 +93,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -153,14 +149,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &1093444285127889886 stripped
@@ -176,17 +176,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -236,14 +232,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &1359295736768058387 stripped
@@ -259,17 +259,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -319,14 +315,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (11)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &2846172984658305655 stripped
@@ -342,17 +342,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -402,14 +398,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &3606053047341331750 stripped
@@ -425,17 +425,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -485,14 +481,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &3994395413540563302 stripped
@@ -508,17 +508,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -568,14 +564,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &4185668056560555012 stripped
@@ -591,17 +591,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -651,14 +647,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &4221291879751337326 stripped
@@ -674,17 +674,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -734,14 +730,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &5218456087802735652 stripped
@@ -757,17 +757,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -817,14 +813,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &5911526718908373669 stripped
@@ -840,17 +840,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.605
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -900,14 +896,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &6098661430820756742 stripped
@@ -923,17 +923,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -983,14 +979,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &6771395062358209328 stripped
@@ -1006,17 +1006,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: SolarPanelModel (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1066,14 +1062,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 40
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: SolarPanelModel (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: f52760216d8b645468ac797219dd19f2, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &7398726202639688561 stripped
