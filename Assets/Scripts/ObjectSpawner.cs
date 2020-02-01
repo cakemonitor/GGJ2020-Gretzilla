@@ -6,10 +6,13 @@ public class ObjectSpawner : MonoBehaviour
 {
     public GameObject planet;
     public float planetRadius = 21.0f;
-    public GameObject[] objectPrefabs;
+    public GameObject[] fossilFuelPrefabs;
+    public GameObject[] greenEnergyPrefabs;
     public int initialAmount = 5;
-    public float minSpawnTime = 5.0f;
-    public float maxSpawnTime = 15.0f;
+    public int fossilFuelQueueSize = 20;
+    [Range(0,1)] public float postQueueChanceOfCleanEnergy = 0.5f;
+    public float minTimeBetweenSpawns = 5.0f;
+    public float maxTimeBetweenSpawns = 15.0f;
 
     GameObject spawnHelper;
 
@@ -50,20 +53,29 @@ public class ObjectSpawner : MonoBehaviour
             Debug.Log("tried " + attemptCount + " times.");
 
         spawnHelper.transform.Translate(0, planetRadius, 0);
-        GameObject prefab = objectPrefabs[Random.Range(0, objectPrefabs.Length)];
+        
+        GameObject prefab = fossilFuelPrefabs[Random.Range(0, fossilFuelPrefabs.Length)];
+        bool pollutiionBuilding = true;
+        if (fossilFuelQueueSize > 0)
+            fossilFuelQueueSize--;
+        else if(Random.value < postQueueChanceOfCleanEnergy)
+        {
+            prefab = greenEnergyPrefabs[Random.Range(0, greenEnergyPrefabs.Length)];
+            pollutiionBuilding = false;
+        }
+
         GameObject CurrentSpawn = Instantiate(prefab, spawnHelper.transform.position, spawnHelper.transform.rotation);
 
-        if (!Pollution.PollutionBuildings.Contains(CurrentSpawn))
-        {
+        if (pollutiionBuilding)
             Pollution.PollutionBuildings.Add(CurrentSpawn);
-        }
-        CurrentSpawn = null;
+        else
+            Pollution.CleanBuildings.Add(CurrentSpawn);
     }
 
     void TimedSpawn()
     {
         Spawn();
-        float nextSpawn = Random.Range(minSpawnTime, maxSpawnTime);
+        float nextSpawn = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
         Invoke("TimedSpawn", nextSpawn);
     }
 }

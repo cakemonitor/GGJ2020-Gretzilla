@@ -6,10 +6,7 @@ public class Factory : MonoBehaviour, ISmashable
 {
     public void Smash()
     {
-        if (Pollution.PollutionBuildings.Contains(gameObject))
-        {
-            Pollution.PollutionBuildings.Remove(gameObject);
-        }
+        Pollution.PollutionBuildings.Remove(gameObject);
         Destroy(gameObject);
     }
 }
