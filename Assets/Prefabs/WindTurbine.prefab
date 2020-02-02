@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 9115315338869967226}
   m_Layer: 10
   m_Name: WindTurbine
-  m_TagString: Destroyable
+  m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

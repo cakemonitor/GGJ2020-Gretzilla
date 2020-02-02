@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7340121694516218045}
   - component: {fileID: 5214617466164667529}
   - component: {fileID: 76837695028605793}
-  - component: {fileID: 3431846858993136214}
+  - component: {fileID: 2188525484726763059}
   m_Layer: 10
   m_Name: Wind Farm
-  m_TagString: Untagged
+  m_TagString: Destroyable
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3431846858993136214
+--- !u!114 &2188525484726763059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7340121694516218046}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e49aa5c550514934ebcb5f396a4fb770, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a2288d2e93c4ba30b08d3a832776615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &200554574381478262
@@ -84,6 +84,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,11 +144,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine (2)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b0529b95affea4e9e5355b4b9da1a0, type: 3}
 --- !u!4 &8955575344783816716 stripped
@@ -159,6 +159,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine
+      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -214,11 +219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine
-      objectReference: {fileID: 0}
     - target: {fileID: 613496257408082673, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -259,6 +259,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,11 +318,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine (1)
       objectReference: {fileID: 0}
     - target: {fileID: 613496257408082673, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
