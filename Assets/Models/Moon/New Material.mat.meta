@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models/Moon/New Material.mat.meta
+guid: 4c8d57fdd91208245ad2f1935e1161a6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+=======
+guid: b6fcdcfc40505ca46821c86af55dccc0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+>>>>>>> e514f316910d283c1cbc35a479ca0a570960bc99:Assets/Animation/NewAnims.controller.meta
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
