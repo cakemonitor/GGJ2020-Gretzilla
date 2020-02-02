@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    private IEnumerator Coroutine;
+    private IEnumerator Coroutine_LoadGame;
+    //private IEnumerator Coroutine_ShowEyes;
+
     public Button StartButton;
     public Button ExitButton;
     public AudioSource StartGameSound;
@@ -78,8 +80,8 @@ public class MainMenu : MonoBehaviour
 
         StartFading = true;
         StartGameSound.Play(0);
-        Coroutine = WaitThenLoad(25f);
-        StartCoroutine(Coroutine);
+        Coroutine_LoadGame = WaitThenLoad(25f);
+        StartCoroutine(Coroutine_LoadGame);
     }
 
     public void ExitGame()
