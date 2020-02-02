@@ -23,13 +23,13 @@ public class PlayerController : MonoBehaviour
     float planetRadius;
     float currentSmashCooldown;
     float attackDuration = 0.25f;
-    Animator animator;
+    public Animator animator;
+    public Animator jumpMotionAnimator;
     bool isStomping = false;
     public AudioSource setpsAudio;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         rBody = GetComponent<Rigidbody>();
         centerPivot = new GameObject().transform;
         centerPivot.name = "Player Center Pivot";
@@ -72,7 +72,8 @@ public class PlayerController : MonoBehaviour
         else if (Input.GetButtonDown("Attack") && !isStomping)
         {
             isStomping = true;
-            animator.Play("Smash");
+            jumpMotionAnimator.Play("Smash");
+            animator.SetTrigger("Smash");
         }
 
         if (setpsAudio.isPlaying && motion.magnitude < 0.1f)
