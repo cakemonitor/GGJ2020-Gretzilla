@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float turnSpeed = 180.0f;
     public float smashCooldown = 1.0f;
     public GameObject smashVFXPrefab;
+    public AudioSource jumpSound;
 
     public Image cooldownImage;
 
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     float attackDuration = 0.25f;
     Animator animator;
     bool isStomping = false;
+    public AudioSource setpsAudio;
 
     void Start()
     {
@@ -51,10 +53,10 @@ public class PlayerController : MonoBehaviour
         centerPivot.transform.LookAt(transform.position, -transform.forward);
         movementTarget.transform.position = (transform.position - centerPivot.transform.position).normalized * planetRadius + centerPivot.transform.position;
 
-        motion.x = Input.GetAxis("Horizontal") * turnSpeed * Time.deltaTime;
-        motion.y = Input.GetAxis("Vertical") * angularMovementSpeed * Time.deltaTime;
+        motion.x = Input.GetAxis("Horizontal");
+        motion.y = Input.GetAxis("Vertical");
 
-        centerPivot.Rotate(motion.y, 0, motion.x);
+        centerPivot.Rotate(motion.y * angularMovementSpeed * Time.deltaTime, 0, motion.x * turnSpeed * Time.deltaTime);
 
         if (currentSmashCooldown > 0)
         {
@@ -71,6 +73,14 @@ public class PlayerController : MonoBehaviour
             isStomping = true;
             animator.Play("Smash");
         }
+
+        if (setpsAudio.isPlaying && motion.magnitude < 0.1f)
+            setpsAudio.loop = false;
+        else if (!setpsAudio.isPlaying && motion.magnitude > 0.1f)
+        {
+            setpsAudio.Play();
+            setpsAudio.loop = true;
+        }
     }
 
     void Smash()
@@ -78,6 +88,7 @@ public class PlayerController : MonoBehaviour
         currentSmashCooldown = smashCooldown;
         damageArea.SetActive(true);
         Invoke("DeactiveDamageArea", attackDuration);
+        jumpSound.Play();
         CameraController.AddTrauma(1.0f);
         GameObject smashVFX = Instantiate(smashVFXPrefab, transform.position, transform.rotation);
         Destroy(smashVFX, 2f);
