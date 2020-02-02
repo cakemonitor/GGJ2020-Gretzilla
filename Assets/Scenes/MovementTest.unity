@@ -5335,6 +5335,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0a85c36e04198a04dba6f1e70fbd8e24, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
+--- !u!82 &834239951 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8968770482409703632, guid: 544fae1f65e457c4fb2f343a2f3645de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4080891105843435697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &971626880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 75e477ba393fd1e478502b8aeb0a6aec,
@@ -5989,5 +5995,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4080891105701739360, guid: 544fae1f65e457c4fb2f343a2f3645de,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 834239951}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 544fae1f65e457c4fb2f343a2f3645de, type: 3}
