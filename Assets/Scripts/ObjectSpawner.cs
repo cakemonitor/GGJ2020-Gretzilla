@@ -8,11 +8,14 @@ public class ObjectSpawner : MonoBehaviour
     public float planetRadius = 21.0f;
     public GameObject[] fossilFuelPrefabs;
     public GameObject[] greenEnergyPrefabs;
+    public GameObject[] flyingPrefabs;
     public int initialAmount = 5;
     public int fossilFuelQueueSize = 20;
     [Range(0,1)] public float postQueueChanceOfCleanEnergy = 0.5f;
     public float minTimeBetweenSpawns = 5.0f;
     public float maxTimeBetweenSpawns = 15.0f;
+    public float minTimeBetweenFlyingSpawns = 5.0f;
+    public float maxTimeBetweenFlyingSpawns = 15.0f;
 
     GameObject spawnHelper;
 
@@ -27,6 +30,7 @@ public class ObjectSpawner : MonoBehaviour
         }
 
         TimedSpawn();
+        TimedFlyingSpawn();
     }
 
     void Spawn()
@@ -72,10 +76,24 @@ public class ObjectSpawner : MonoBehaviour
             Pollution.CleanBuildings.Add(CurrentSpawn);
     }
 
+    void FlyingSpawn()
+    {
+        GameObject flyingPrefab = flyingPrefabs[Random.Range(0, flyingPrefabs.Length)];
+        Instantiate(flyingPrefab, planet.transform.position, Random.rotation);
+
+    }
+
     void TimedSpawn()
     {
         Spawn();
         float nextSpawn = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
         Invoke("TimedSpawn", nextSpawn);
+    }
+
+    void TimedFlyingSpawn()
+    {
+        FlyingSpawn();
+        float nextSpawn = Random.Range(minTimeBetweenSpawns, maxTimeBetweenSpawns);
+        Invoke("FlyingSpawn", nextSpawn);
     }
 }
