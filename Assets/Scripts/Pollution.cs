@@ -7,6 +7,7 @@ public class Pollution : MonoBehaviour
 {
     public static List<GameObject> PollutionBuildings = new List<GameObject>();
     public static List<GameObject> CleanBuildings = new List<GameObject>();
+    public List<GameObject> EffectsToSpawn = new List<GameObject>();
 
     public float PollutionLevel = 500;
     public float PollutionMultiplier = 1f;

@@ -5234,6 +5234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ffbe902f56e4004eb0c1ba715f5f8e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EffectsToSpawn:
+  - {fileID: 7925959473461815231, guid: 67eb5997e06cbea4b846686cd5eeb6c9, type: 3}
   PollutionLevel: 400
   PollutionMultiplier: 1
   cleanEnergyWinRatio: 0.75
@@ -6025,10 +6027,15 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 834239951}
+    - target: {fileID: 4080891105852524233, guid: 544fae1f65e457c4fb2f343a2f3645de,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 3895
+      objectReference: {fileID: 0}
     - target: {fileID: 8606714902196501621, guid: 544fae1f65e457c4fb2f343a2f3645de,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8606714902196501621, guid: 544fae1f65e457c4fb2f343a2f3645de,
         type: 3}
