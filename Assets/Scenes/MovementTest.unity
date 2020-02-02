@@ -5200,6 +5200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 780067044}
   - component: {fileID: 780067045}
+  - component: {fileID: 780067046}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -5238,6 +5239,20 @@ MonoBehaviour:
   cleanEnergyWinRatio: 0.75
   LoseScreen: {fileID: 515569754}
   WinScreen: {fileID: 2069794915}
+--- !u!114 &780067046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780067043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b371be054820338ebd4137297350b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicAudioSource: {fileID: 4080891105843435698}
+  startDelay: 22
 --- !u!1001 &793244284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6022,3 +6037,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 544fae1f65e457c4fb2f343a2f3645de, type: 3}
+--- !u!82 &4080891105843435698 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9118531433167369383, guid: 544fae1f65e457c4fb2f343a2f3645de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4080891105843435697}
+  m_PrefabAsset: {fileID: 0}
