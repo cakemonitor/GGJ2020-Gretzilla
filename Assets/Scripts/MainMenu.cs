@@ -11,10 +11,10 @@ public class MainMenu : MonoBehaviour
     public Button ExitButton;
     public AudioSource StartGameSound;
     public Image Background;
-    public Image LeftEye;
-    public Image RightEye;
+    public Image Face;
+    public Image GlowingEyes;
     public bool StartFading = false;
-    public bool ShowEyes = false;
+    public bool ShowFace = false;
 
     void Awake()
     {
@@ -28,23 +28,26 @@ public class MainMenu : MonoBehaviour
             Color TempAlpha = Background.color;
             TempAlpha.a -= (0.1f * Time.deltaTime);
             Background.color = TempAlpha;
+            StartButton.GetComponent<Image>().color = TempAlpha;
+            StartButton.GetComponentInChildren<Image>().color = TempAlpha;
+            ExitButton.GetComponent<Image>().color = TempAlpha;
+            ExitButton.GetComponentInChildren<Image>().color = TempAlpha;
 
             if (TempAlpha.a <= 0)
             {
-                ShowEyes = true;
+                ShowFace = true;
                 StartFading = false;
             }
         }
-        if (ShowEyes == true)
+        if (ShowFace == true)
         {
-            Color TempAlpha = LeftEye.color;
+            Color TempAlpha = Face.color;
             TempAlpha.a += (0.5f * Time.deltaTime);
-            LeftEye.color = TempAlpha;
-            RightEye.color = TempAlpha;
+            Face.color = TempAlpha;
 
             if (TempAlpha.a >= 1f)
             {
-                ShowEyes = false;
+                ShowFace = false;
             }
         }
     }
