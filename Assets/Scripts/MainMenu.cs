@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public Image GlowingEyes;
     public bool StartFading = false;
     public bool ShowFace = false;
+    public bool ShowEyes = false;
 
     void Awake()
     {
@@ -47,7 +48,19 @@ public class MainMenu : MonoBehaviour
 
             if (TempAlpha.a >= 1f)
             {
+                ShowEyes = true;
                 ShowFace = false;
+            }
+        }
+        if (ShowEyes == true)
+        {
+            Color TempAlpha = GlowingEyes.color;
+            TempAlpha.a += (3f * Time.deltaTime);
+            GlowingEyes.color = TempAlpha;
+
+            if (TempAlpha.a >= 1f)
+            {
+                ShowEyes = false;
             }
         }
     }
