@@ -5251,8 +5251,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b371be054820338ebd4137297350b08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gretzillaModel: {fileID: 1828859290}
+  startScale: 0
+  startGrowthTime: 5
+  fullSizeTime: 7
   musicAudioSource: {fileID: 4080891105843435698}
-  startDelay: 22
+  musicStartDelay: 22
 --- !u!1001 &793244284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5656,6 +5660,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780265215}
   m_CullTransparentMesh: 0
+--- !u!1 &1828859290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4080891105536296830, guid: 544fae1f65e457c4fb2f343a2f3645de,
+    type: 3}
+  m_PrefabInstance: {fileID: 4080891105843435697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1953379846
 GameObject:
   m_ObjectHideFlags: 0
