@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
         centerPivot = new GameObject().transform;
         centerPivot.name = "Player Center Pivot";
         centerPivot.position = planet.transform.position;
+        centerPivot.rotation = transform.rotation;
         movementTarget = new GameObject();
         movementTarget.name = "Player Movement Target";
         movementTarget.transform.position = transform.position;

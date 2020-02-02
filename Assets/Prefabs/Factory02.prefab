@@ -86,11 +86,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokeStack (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 4809410891234899760, guid: a09f04c3bb46fe5448200721e07141cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -146,6 +141,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokeStack (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09f04c3bb46fe5448200721e07141cf, type: 3}
 --- !u!4 &5870762829700078968 stripped
@@ -161,11 +161,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokeStack
-      objectReference: {fileID: 0}
     - target: {fileID: 4809410891234899760, guid: a09f04c3bb46fe5448200721e07141cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -221,6 +216,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokeStack
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09f04c3bb46fe5448200721e07141cf, type: 3}
 --- !u!4 &468496960581855814 stripped
@@ -236,11 +236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokeStack (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 4809410891234899760, guid: a09f04c3bb46fe5448200721e07141cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -295,6 +290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokeStack (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09f04c3bb46fe5448200721e07141cf, type: 3}
@@ -365,24 +365,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 40
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 40
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 40
+      value: 0.4
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: fa079e56f95c3974899ece87a83a6981, type: 3}
+    - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f730f525c554405787ea198e4560e89, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &6098661430820756742 stripped
@@ -398,11 +398,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
-    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
-        type: 3}
-      propertyPath: m_Name
-      value: SmokeStack (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 4809410891234899760, guid: a09f04c3bb46fe5448200721e07141cf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -457,6 +452,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528449767345513415, guid: a09f04c3bb46fe5448200721e07141cf,
+        type: 3}
+      propertyPath: m_Name
+      value: SmokeStack (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09f04c3bb46fe5448200721e07141cf, type: 3}
