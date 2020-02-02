@@ -5336,7 +5336,7 @@ MonoBehaviour:
   - {fileID: 7925959473461815231, guid: 67eb5997e06cbea4b846686cd5eeb6c9, type: 3}
   PollutionLevel: 400
   PollutionMultiplier: 1
-  cleanEnergyWinRatio: 0.75
+  cleanEnergyWinRatio: 0.5
   LoseScreen: {fileID: 515569754}
   WinScreen: {fileID: 2069794915}
 --- !u!114 &780067046
@@ -5380,13 +5380,13 @@ MonoBehaviour:
   flyingPrefabs:
   - {fileID: 6456079043961717400, guid: c1c80c679ba862f478a7e01b357713ae, type: 3}
   - {fileID: 2299213745209343947, guid: 407b5e08a67b641488a55aefad95a72e, type: 3}
-  initialAmount: 6
-  fossilFuelQueueSize: 15
-  postQueueChanceOfCleanEnergy: 0.333
+  initialAmount: 3
+  fossilFuelQueueSize: 10
+  postQueueChanceOfCleanEnergy: 0.5
   minTimeBetweenSpawns: 2
   maxTimeBetweenSpawns: 6
-  minTimeBetweenFlyingSpawns: 5
-  maxTimeBetweenFlyingSpawns: 15
+  minTimeBetweenFlyingSpawns: 3
+  maxTimeBetweenFlyingSpawns: 7
 --- !u!1001 &793244284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5401,6 +5401,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
       propertyPath: m_Layer

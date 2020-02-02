@@ -47,7 +47,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
+  m_Size: {x: 3, y: 2, z: 3}
   m_Center: {x: 0, y: 1, z: 0.15}
 --- !u!54 &76837695028605793
 Rigidbody:
@@ -84,11 +84,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -144,6 +139,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17b0529b95affea4e9e5355b4b9da1a0, type: 3}
 --- !u!4 &8955575344783816716 stripped
@@ -159,11 +159,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine
-      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -219,6 +214,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine
+      objectReference: {fileID: 0}
     - target: {fileID: 613496257408082673, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -259,11 +259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7340121694516218045}
     m_Modifications:
-    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
-        type: 3}
-      propertyPath: m_Name
-      value: WindTurbine (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 9115315338869967226, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -318,6 +313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115315338869967206, guid: 17b0529b95affea4e9e5355b4b9da1a0,
+        type: 3}
+      propertyPath: m_Name
+      value: WindTurbine (1)
       objectReference: {fileID: 0}
     - target: {fileID: 613496257408082673, guid: 17b0529b95affea4e9e5355b4b9da1a0,
         type: 3}
