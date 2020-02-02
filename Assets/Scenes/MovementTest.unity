@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.35872743, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5253,6 +5253,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5317,10 +5321,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 81534353461f3a847905408a57326463, type: 2}
-    - target: {fileID: 100006, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 2300004, guid: 75e477ba393fd1e478502b8aeb0a6aec, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -6000,5 +6000,20 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 834239951}
+    - target: {fileID: 8606714902196501621, guid: 544fae1f65e457c4fb2f343a2f3645de,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8606714902196501621, guid: 544fae1f65e457c4fb2f343a2f3645de,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 18b7048d4f555f94880875a16280dc1e, type: 3}
+    - target: {fileID: 8606714902196501621, guid: 544fae1f65e457c4fb2f343a2f3645de,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 544fae1f65e457c4fb2f343a2f3645de, type: 3}
