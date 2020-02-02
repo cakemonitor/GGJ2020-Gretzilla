@@ -20,6 +20,7 @@ public class Factory : MonoBehaviour, ISmashable
         TempExplosion.transform.localPosition = new Vector3(0, 4f, 0);
         TempExplosion.transform.localScale = new Vector3(7, 7, 7);
         TempExplosion.transform.parent = null;
+        Destroy(TempExplosion, 4);
         Destroy(gameObject);
     }
 }
