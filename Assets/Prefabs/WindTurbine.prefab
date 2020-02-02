@@ -51,17 +51,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6098661430820756742}
     m_Modifications:
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: WindTurbineTopModel
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00413
+      value: 0.383
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.01783
+      value: 1.794
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalRotation.x
@@ -107,10 +111,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: WindTurbineTopModel
-      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -118,7 +118,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
+      objectReference: {fileID: 2100000, guid: 19c12cf415c44da469081cdd5730fa53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!1 &613496257407663825 stripped
@@ -140,6 +140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 613496257408082673}
     m_Modifications:
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: WindTurbineBladeModel (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -196,10 +200,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: WindTurbineBladeModel (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -207,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
+      objectReference: {fileID: 2100000, guid: 19c12cf415c44da469081cdd5730fa53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!1001 &6098661430820882310
@@ -217,6 +217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9115315338869967226}
     m_Modifications:
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: WindTurbineBottomModel
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -263,19 +267,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 40
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 40
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: WindTurbineBottomModel
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
@@ -284,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
+      objectReference: {fileID: 2100000, guid: 19c12cf415c44da469081cdd5730fa53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!4 &6098661430820756742 stripped
@@ -300,6 +300,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 613496257408082673}
     m_Modifications:
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: WindTurbineBladeModel
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -356,10 +360,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: WindTurbineBladeModel
-      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
+      objectReference: {fileID: 2100000, guid: 19c12cf415c44da469081cdd5730fa53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
 --- !u!1001 &8941524385513981264
@@ -377,6 +377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 613496257408082673}
     m_Modifications:
+    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
+      propertyPath: m_Name
+      value: WindTurbineBladeModel (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -433,10 +437,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
-      propertyPath: m_Name
-      value: WindTurbineBladeModel (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -444,6 +444,6 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2c3ae70f3a73f914f8b8e4a980fd88bf, type: 2}
+      objectReference: {fileID: 2100000, guid: 19c12cf415c44da469081cdd5730fa53, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a65cbbae9cde64ab31f91583a54ab4, type: 3}
