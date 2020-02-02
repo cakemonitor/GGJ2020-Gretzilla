@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
     private IEnumerator Coroutine_LoadGame;
-    //private IEnumerator Coroutine_ShowEyes;
+    private IEnumerator Coroutine_ShowEyes;
 
     public Button StartButton;
     public Button ExitButton;
@@ -45,12 +45,13 @@ public class MainMenu : MonoBehaviour
         if (ShowFace == true)
         {
             Color TempAlpha = Face.color;
-            TempAlpha.a += (0.5f * Time.deltaTime);
+            TempAlpha.a += (0.1f * Time.deltaTime);
             Face.color = TempAlpha;
 
-            if (TempAlpha.a >= 1f)
+            if (TempAlpha.a >= 0.6f)
             {
-                ShowEyes = true;
+                Coroutine_ShowEyes = WaitAndShow(1.5f);
+                StartCoroutine(Coroutine_ShowEyes);
                 ShowFace = false;
             }
         }
@@ -87,6 +88,12 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    private IEnumerator WaitAndShow(float WaitTime)
+    {
+        yield return new WaitForSeconds(WaitTime);
+        ShowEyes = true;
     }
 
     private IEnumerator WaitThenLoad(float WaitTime)
