@@ -16,12 +16,14 @@ public class CameraController : MonoBehaviour
 
     static float trauma = 0.0f;
 
-
-    void FixedUpdate()
+    void Update()
     {
         transform.position = Vector3.SmoothDamp(transform.position, cameraLocator.position, ref velocity, smoothTime);
         transform.LookAt(cameraTarget, cameraLocator.up);
+    }
 
+    void FixedUpdate()
+    {
         if (trauma > 0.0f)
         {
             shakeOffset = Random.insideUnitSphere * maxCameraShake * Mathf.Pow(trauma, traumaPowerFactor);
